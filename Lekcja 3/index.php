@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <?php
+        $connect= mysqli_connect([localhost[,root[,[Swiercz]]]]);
+        or die('Nie mogę połączyć się z bazą danych<br>'.mysqli_error());
+        echo "Udało się połączyć z bazą dancyh";
+    ?>   
 </body>
 </html>
