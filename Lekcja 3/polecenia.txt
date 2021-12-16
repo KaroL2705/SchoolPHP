@@ -1,0 +1,10 @@
+1. mysqli_connect([adres_serwera[,nazwa_użytkownika[,haslo]]]);- podłączenie do bazy danych
+2. port mysql- 3306; chyba ze administrator zmieni
+3. $connect= mysqli_connect('serwer.com','admin','passwd');- przypisanie komendy do zmiennej
+4. or die ('Brak połączenia z serwerem MySQL.</br>'.mysqli_error());- jesli nie połączy sie z bazą wyswietli napis i dokładny błąd
+5. $db= mysqli_select_db($connect,'nazwa_bay');
+6. mysqli_close([identyfikator_połączenia]);- rozłączenie z bazą
+7. mysqli_close($connect);- rozłączenie z ostatnio używaną
+8. mysqli_query($connect,$zapytanie);- dodawanie bazy lub rekordu tzw. zapytanie
+9. $zapytanie= CREATETABLE nazwa(...);- zmienna z tworzeniem bazy danych;
+10. mysqli_fetch_row($idzapytania);- wczytuje wiersze z tabeli
