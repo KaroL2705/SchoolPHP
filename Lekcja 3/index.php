@@ -26,12 +26,8 @@
         $zapytanie2 = "UPDATE TEST SET lata = '36' WHERE nazwisko='Irving'";
         $idzapytania2 = mysqli_query($connect,$zapytanie);
 
-        $zapytanie = "DELETE FROM nba WHERE nazwisko ='Irving'";
-        $idzapytania = mysqli_query($connect,$zapytanie);
-
-
-
-
+        $zapytanie = "DELETE FROM TEST WHERE nazwisko ='Irving'";
+        $idzapytania = mysqli_query($connect,$zapytanie);        
     ?>   
 </body>
 </html>
