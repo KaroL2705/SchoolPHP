@@ -14,13 +14,22 @@
         //$DB= 'CREATE TABLE TEST(id int not null, nazwisko char(30), lata char(3))';
         //$zapytanie =mysqli_query($connect,$DB) or die ('nie udało się utworzyć tabeli');
         //echo "Udało się utowrzyć tabelę<br> $zapytanie";
-        $wybór= 'SELECT nazwiska,lata from TEST';
-        $idzapytania= mysqli_query($connect,$wybór);
-        echo '<table>'; 
-        while ($wiersz = mysqli_fetch_row($idzapytania)){ 
+        $zapytanie = "SELECT nazwisko, lata FROM TEST WHERE nazwisko='Irving'"; 
+        $idzapytania = mysqli_query($connect,$zapytanie);
+
+        echo '<table>'; while ($wiersz = mysqli_fetch_row($idzapytania)) 
+        { 
             echo '<tr><td>Nazwisko: '. $wiersz[0] .'</td><td>Lata: '. $wiersz[1] .'</td></tr>'; 
         }
-    echo '</table>';
+        echo '</table>';
+
+        $zapytanie2 = "UPDATE TEST SET lata = '36' WHERE nazwisko='Irving'";
+        $idzapytania2 = mysqli_query($connect,$zapytanie);
+
+        $zapytanie = "DELETE FROM nba WHERE nazwisko ='Irving'";
+        $idzapytania = mysqli_query($connect,$zapytanie);
+
+
 
 
     ?>   
