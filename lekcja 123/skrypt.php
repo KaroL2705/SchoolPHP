@@ -9,8 +9,8 @@
 <body> 
     Imię: <?php echo $_GET['imie']?><br/> 
     Nazwisko: <?php echo $_GET['nazwisko']?><br/> 
-    Data urodzenia <?php echo $_GET['data']?><br>
-    Miasto <?php echo $_GET['miasto']?><br>
-    Wiek <?php echo $_GET['wiek']?><br>
+    Data urodzenia: <?php echo $_GET['data']?><br>
+    Miasto: <?php echo $_GET['miasto']?><br>
+    Wiek: <?php echo $_GET['wiek']?><br>
 </body>
 </html>
